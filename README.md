@@ -1,21 +1,30 @@
-# 👋 | Hello there!
+# | Hello there!
 
-Welcome to my GitHub repository! My name is **David Ramirez**, and I'm a frontend developer with experience in backend work. With a strong focus on JavaScript and React, I specialize in crafting captivating user interfaces that deliver exceptional user experiences.
+Welcome to my GitHub repository! My name is David Ramirez, and I specialize in web development with expertise in both frontend and backend work. With a strong focus on creating captivating user interfaces and delivering exceptional user experiences. I leverage various design technologies to bring ideas to life.
 
-# 👨🏾‍💻 | Skills
+# | Skills
 
-## Frontend Development
-- **JavaScript (JS):** I have a deep understanding of JavaScript and its latest features.
-- **React:** I have experience in developing user interfaces using React.
-- **HTML/CSS:** I am proficient in crafting semantically structured HTML and styling it with CSS to create visually appealing web pages.
-- **Responsive Design:** I ensure that the websites I build are fully responsive, adapting seamlessly to different screen sizes and devices.
+### Frontend Development
+- Markup and Styling Web Languages
+- Web Programming Languages and Frameworks
 
-## Backend Development
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,react)](https://skillicons.dev)
+### Backend Development
+- Web Programming Languages and Frameworks
 
-I also enjoy working on the backend. Here's an overview of my backend skills:
+[![My Skills](https://skillicons.dev/icons?i=laravel)](https://skillicons.dev)
 
-- **Laravel:** I have hands-on experience.
-- **Database Integration:** I have experience working with various databases, such as MySQL and PostgreSQL
+### Design and Prototyping Tools
+- UI Design Tools
+- Graphic Design and Editing
+
+[![My Skills](https://skillicons.dev/icons?i=ai,ps,figma)](https://skillicons.dev)
+
+### Complementary Skills:
+- Collaborative Development
+- Markup Lenguages
+
+[![My Skills](https://skillicons.dev/icons?i=bash,git,github,md)](https://skillicons.dev)
 
 
 <!-- # Experience
