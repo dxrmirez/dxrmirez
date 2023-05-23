@@ -1,3 +1,5 @@
+[![](https://visitcount.itsvg.in/api?id=dxrmirez&label=Profile%20views&color=12&icon=2&pretty=true)](https://visitcount.itsvg.in)
+
 # | Hello there!
 
 Welcome to my GitHub repository! My name is David Ramirez, and I specialize in web development with expertise in both frontend and backend work. With a strong focus on creating captivating user interfaces and delivering exceptional user experiences. I leverage various design technologies to bring ideas to life.
