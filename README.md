@@ -1,4 +1,4 @@
-[![](https://visitcount.itsvg.in/api?id=dxrmirez&label=Profile%20views&color=12&icon=2&pretty=true)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=dxrmirez&label=Profile%20Views&color=4&icon=5&pretty=true)](https://visitcount.itsvg.in)
 
 # | Hello there!
 
