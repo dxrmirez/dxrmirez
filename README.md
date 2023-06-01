@@ -10,7 +10,7 @@ Welcome to my GitHub repository! My name is David Ramirez, and I specialize in w
 - Markup and Styling Web Languages
 - Web Programming Languages and Frameworks
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,react)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,sass,react)](https://skillicons.dev)
 ### Backend Development
 - Web Programming Languages and Frameworks
 
