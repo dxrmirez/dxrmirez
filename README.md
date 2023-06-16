@@ -17,7 +17,7 @@ Welcome to my GitHub repository! My name is David Ramirez, and I specialize in w
 [![My Skills](https://skillicons.dev/icons?i=laravel)](https://skillicons.dev)
 
 ### Design and Prototyping Tools
-- UI Design Tools
+- UI/UX Design Tools
 - Graphic Design and Editing
 
 [![My Skills](https://skillicons.dev/icons?i=ai,ps,figma)](https://skillicons.dev)
