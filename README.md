@@ -15,7 +15,7 @@ Welcome to my GitHub repository! My name is David Ramirez, and I specialize in w
 - Web Programming Languages and Frameworks
 - IDEs Used
 
-[![My Skills](https://skillicons.dev/icons?i=java,idea)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,spring,idea)](https://skillicons.dev)
 
 ### Design and Prototyping Tools
 - UI/UX Design Tools
