@@ -1,0 +1,94 @@
+$primary-color: salmon;
+$black: #221c17;
+$code: 'Source Code Pro', monospace;
+$atari: 'Press Start 2P', cursive;
+$xs: 1.2rem;
+$sm: 1.4rem;
+$md: 1.6rem;
+$lg: 1.8rem;
+$xlg: 2rem;
+
+@mixin flex($direction: null, $justify: null, $align: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    body {
+        background-color: $black;
+        color: white;
+        font-family: $code;
+        font-size: $sm;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.header {
+    height: 10vh;
+
+    &_config {
+        @include flex(null, right, center);
+        gap: 3.2rem;
+        height: 6vh;
+        padding: 0 2rem;
+
+        &-theme {
+            width: 2.8rem;
+            color: $primary-color;
+            cursor: pointer;
+        }
+
+        &-lang {
+            list-style: none;
+            font-size: $xs;
+            font-weight: 300;
+            @include flex();
+            gap: 1.6rem;
+
+            a:hover {
+                color: $primary-color;
+                transition: 0.3s color;
+            }
+        }
+    }
+
+    &_navbar {
+        height: 9vh;
+        background-color: $primary-color;
+        padding: 0 3.2rem;
+        @include flex(null, space-between, center);
+
+        &-logo {
+            width: 4rem;
+            fill: $black;
+        }
+
+        a {
+            color: $black;
+            font-weight: 700;
+        }
+    }
+
+}
+
+footer {
+    min-height: 90vh;
+}

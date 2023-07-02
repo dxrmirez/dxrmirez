@@ -1,1 +1,70 @@
-/*# sourceMappingURL=mobile.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  background-color: #221c17;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.4rem;
+}
+html body a {
+  text-decoration: none;
+  color: white;
+}
+html body a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  height: 10vh;
+}
+.header_config {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 3.2rem;
+  height: 6vh;
+  padding: 0 2rem;
+}
+.header_config-theme {
+  width: 2.8rem;
+  color: salmon;
+  cursor: pointer;
+}
+.header_config-lang {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  gap: 1.6rem;
+}
+.header_config-lang a:hover {
+  color: salmon;
+  transition: 0.3s color;
+}
+.header_navbar {
+  height: 9vh;
+  background-color: salmon;
+  padding: 0 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_navbar-logo {
+  width: 4rem;
+  fill: #221c17;
+}
+.header_navbar a {
+  color: #221c17;
+  font-weight: 700;
+}
+
+footer {
+  min-height: 90vh;
+}/*# sourceMappingURL=mobile.css.map */
