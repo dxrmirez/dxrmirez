@@ -4,6 +4,12 @@ $left-color: #616C81;
 $right-color: #7D949F;
 $floor-color: #7C5C4E;
 
+.dark-mode {
+    $left-color: #414564;
+    $right-color: #50556E;
+    $floor-color: #512F39;
+}
+
 
 $code: 'Source Code Pro', monospace;
 $atari: 'Press Start 2P', cursive;
