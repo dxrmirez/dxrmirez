@@ -1,16 +1,13 @@
 $black: #222225;
 
-$left-color: #616C81;
-$right-color: #7D949F;
-$floor-color: #7C5C4E;
+$lg-left-color: #616C81;
+$lg-right-color: #7D949F;
+$lg-floor-color: #7C5C4E;
 
-.dark-mode-left{
-    background-color: blue;
-}
 
-$left-color: #414564;
-$right-color: #50556E;
-$floor-color: #512F39;
+$dk-left-color: #414564;
+$dk-right-color: #50556E;
+$dk-floor-color: #512F39;
 
 
 $code: 'Source Code Pro', monospace;
@@ -65,7 +62,7 @@ html {
         gap: 3.2rem;
         width: 50%;
         padding: 0 2rem;
-        background-color: $right-color;
+        background-color: $lg-right-color;
 
         &-theme {
             width: 2.8rem;
@@ -79,7 +76,7 @@ html {
 
     &_left {
         @include flex(null, left, center);
-        background-color: $left-color;
+        background-color: $lg-left-color;
         width: 50%;
         padding: 0 0 0 2rem;
     }
@@ -89,7 +86,7 @@ html {
 .main {
     &_hero {
         line-height: 0;
-        background: linear-gradient(to right, $left-color 50%, $right-color 50%);
+        background: linear-gradient(to right, $lg-left-color 50%, $lg-right-color 50%);
         @include flex(null, center, center);
 
         img {
@@ -97,8 +94,28 @@ html {
         }
     }
 
-    div {
-        height: 70vh;
-        background-color: $floor-color;
+
+}
+
+main div {
+    height: 70vh;
+    background-color: $lg-floor-color;
+}
+
+.dark-mode {
+    &-left {
+        background-color: $dk-left-color;
+    }
+
+    &-right {
+        background-color: $dk-right-color;
+    }
+
+    &-hero{
+        background: linear-gradient(to right, $dk-left-color 50%, $dk-right-color 50%);
+    }
+
+    &-floor {
+        background-color: $dk-floor-color;
     }
 }

@@ -62,7 +62,21 @@ html body a:hover {
 .main_hero img {
   width: 300px;
 }
-.main div {
+
+main div {
   height: 70vh;
   background-color: #7C5C4E;
+}
+
+.dark-mode-left {
+  background-color: #414564;
+}
+.dark-mode-right {
+  background-color: #50556E;
+}
+.dark-mode-hero {
+  background: linear-gradient(to right, #414564 50%, #50556E 50%);
+}
+.dark-mode-floor {
+  background-color: #512F39;
 }/*# sourceMappingURL=mobile.css.map */
