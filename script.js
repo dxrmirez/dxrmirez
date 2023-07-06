@@ -1,3 +1,9 @@
+import darkTheme from "./modules/lamp.js";
+
+document.addEventListener('DOMContentLoaded', e => {
+    darkTheme('[data-lamp-icon] *')
+});
+
 /* DARK MODE (default):
 >> lamp-on.png
 >> night.gif
