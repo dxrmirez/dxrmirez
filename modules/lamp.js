@@ -18,7 +18,7 @@ d.addEventListener('click', e => {
        function gifPromise (){
         return new Promise((resolve,reject) =>{
       timeout1 =   setTimeout(() => {
-            resolve( $gif.setAttribute('src', '/assets/hero-gif/transition-day.gif'));
+            resolve( $gif.setAttribute('src', './assets/hero-gif/transition-day.gif'));
         },900)})
     }
        const transitionNight = async () => {
@@ -26,14 +26,14 @@ d.addEventListener('click', e => {
             await gifPromise();
 
           await new Promise(resolve => setTimeout(resolve,902)); 
-           $gif.setAttribute('src', '/assets/hero-gif/night.gif');
+           $gif.setAttribute('src', './assets/hero-gif/night.gif');
            clearTimeout(timeout2);
         } catch (error) {}}
 
         function gifPromise2 (){
             return new Promise((resolve,reject) =>{
           timeout2 =  setTimeout(() => {
-                resolve($gif.setAttribute('src', '/assets/hero-gif/transition-night.gif'));
+                resolve($gif.setAttribute('src', './assets/hero-gif/transition-night.gif'));
             },900)})
         }
 
@@ -42,11 +42,11 @@ d.addEventListener('click', e => {
                 await gifPromise2();
     
               await new Promise(resolve => setTimeout(resolve,902)); 
-              $gif.setAttribute('src', '/assets/hero-gif/day.gif');
+              $gif.setAttribute('src', './assets/hero-gif/day.gif');
               clearTimeout(timeout1)
             } catch (error) {}}        
 
-       if($gif.getAttribute('src') === '/assets/hero-gif/day.gif'){transitionNight();} 
+       if($gif.getAttribute('src') === './assets/hero-gif/day.gif'){transitionNight();} 
        else{ transitionDay(); }
     
     }
