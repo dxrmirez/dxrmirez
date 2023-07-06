@@ -1,4 +1,4 @@
-$black: #221c17;
+$black: #222225;
 
 /*Dark mode*/
 $left-color: #414564;
@@ -50,9 +50,11 @@ html {
 .header {
     height: 6vh;
     @include flex();
+    color: white;
+    font-weight: 700;
 
     &_right {
-        @include flex(null, right, top);
+        @include flex(null, left, top);
         gap: 3.2rem;
         width: 50%;
         padding: 0 2rem;
@@ -61,21 +63,9 @@ html {
         &-theme {
             width: 2.8rem;
             cursor: pointer;
-            img{
+
+            img {
                 width: 4rem;
-            }
-        }
-
-        &-lang {
-            list-style: none;
-            font-size: $xs;
-            font-weight: 300;
-            @include flex();
-            gap: 1.6rem;
-
-            a:hover {
-                color: $floor-color;
-                transition: 0.3s color;
             }
         }
     }
@@ -83,7 +73,7 @@ html {
     &_left {
         @include flex(null, left, center);
         background-color: $left-color;
-        width: 51%;
+        width: 50%;
         padding: 0 0 0 2rem;
     }
 
@@ -92,9 +82,11 @@ html {
 .main {
     &_hero {
         line-height: 0;
+        background: linear-gradient(to right, $left-color 50%, $right-color 50%);
+        @include flex(null, center, center);
 
         img {
-            width: 100%;
+            width: 300px;
         }
     }
 

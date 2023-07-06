@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 html body {
-  background-color: #221c17;
+  background-color: #222225;
   color: white;
   font-family: "Source Code Pro", monospace;
   font-size: 1.4rem;
@@ -25,10 +25,12 @@ html body a:hover {
 .header {
   height: 6vh;
   display: flex;
+  color: white;
+  font-weight: 700;
 }
 .header_right {
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: top;
   gap: 3.2rem;
   width: 50%;
@@ -42,31 +44,24 @@ html body a:hover {
 .header_right-theme img {
   width: 4rem;
 }
-.header_right-lang {
-  list-style: none;
-  font-size: 1.2rem;
-  font-weight: 300;
-  display: flex;
-  gap: 1.6rem;
-}
-.header_right-lang a:hover {
-  color: #512F39;
-  transition: 0.3s color;
-}
 .header_left {
   display: flex;
   justify-content: left;
   align-items: center;
   background-color: #414564;
-  width: 51%;
+  width: 50%;
   padding: 0 0 0 2rem;
 }
 
 .main_hero {
   line-height: 0;
+  background: linear-gradient(to right, #414564 50%, #50556E 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_hero img {
-  width: 100%;
+  width: 300px;
 }
 .main div {
   height: 70vh;
