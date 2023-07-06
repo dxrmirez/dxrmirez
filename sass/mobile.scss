@@ -93,8 +93,6 @@ html {
             width: 300px;
         }
     }
-
-
 }
 
 main div {
@@ -111,7 +109,7 @@ main div {
         background-color: $dk-right-color;
     }
 
-    &-hero{
+    &-hero {
         background: linear-gradient(to right, $dk-left-color 50%, $dk-right-color 50%);
     }
 
