@@ -1,5 +1,11 @@
-$primary-color: salmon;
 $black: #221c17;
+
+/*Dark mode*/
+$left-color: #414564;
+$right-color: #50556E;
+$floor-color: #512F39;
+
+
 $code: 'Source Code Pro', monospace;
 $atari: 'Press Start 2P', cursive;
 $xs: 1.2rem;
@@ -42,18 +48,22 @@ html {
 }
 
 .header {
-    height: 10vh;
+    height: 6vh;
+    @include flex();
 
-    &_config {
-        @include flex(null, right, center);
+    &_right {
+        @include flex(null, right, top);
         gap: 3.2rem;
-        height: 6vh;
+        width: 50%;
         padding: 0 2rem;
+        background-color: $right-color;
 
         &-theme {
             width: 2.8rem;
-            color: $primary-color;
             cursor: pointer;
+            img{
+                width: 4rem;
+            }
         }
 
         &-lang {
@@ -64,31 +74,32 @@ html {
             gap: 1.6rem;
 
             a:hover {
-                color: $primary-color;
+                color: $floor-color;
                 transition: 0.3s color;
             }
         }
     }
 
-    &_navbar {
-        height: 9vh;
-        background-color: $primary-color;
-        padding: 0 3.2rem;
-        @include flex(null, space-between, center);
-
-        &-logo {
-            width: 4rem;
-            fill: $black;
-        }
-
-        a {
-            color: $black;
-            font-weight: 700;
-        }
+    &_left {
+        @include flex(null, left, center);
+        background-color: $left-color;
+        width: 51%;
+        padding: 0 0 0 2rem;
     }
 
 }
 
-footer {
-    min-height: 90vh;
+.main {
+    &_hero {
+        line-height: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    div {
+        height: 70vh;
+        background-color: $floor-color;
+    }
 }

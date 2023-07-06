@@ -1,3 +1,4 @@
+/*Dark mode*/
 * {
   margin: 0;
   padding: 0;
@@ -22,49 +23,52 @@ html body a:hover {
 }
 
 .header {
-  height: 10vh;
+  height: 6vh;
+  display: flex;
 }
-.header_config {
+.header_right {
   display: flex;
   justify-content: right;
-  align-items: center;
+  align-items: top;
   gap: 3.2rem;
-  height: 6vh;
+  width: 50%;
   padding: 0 2rem;
+  background-color: #50556E;
 }
-.header_config-theme {
+.header_right-theme {
   width: 2.8rem;
-  color: salmon;
   cursor: pointer;
 }
-.header_config-lang {
+.header_right-theme img {
+  width: 4rem;
+}
+.header_right-lang {
   list-style: none;
   font-size: 1.2rem;
   font-weight: 300;
   display: flex;
   gap: 1.6rem;
 }
-.header_config-lang a:hover {
-  color: salmon;
+.header_right-lang a:hover {
+  color: #512F39;
   transition: 0.3s color;
 }
-.header_navbar {
-  height: 9vh;
-  background-color: salmon;
-  padding: 0 3.2rem;
+.header_left {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
-}
-.header_navbar-logo {
-  width: 4rem;
-  fill: #221c17;
-}
-.header_navbar a {
-  color: #221c17;
-  font-weight: 700;
+  background-color: #414564;
+  width: 51%;
+  padding: 0 0 0 2rem;
 }
 
-footer {
-  min-height: 90vh;
+.main_hero {
+  line-height: 0;
+}
+.main_hero img {
+  width: 100%;
+}
+.main div {
+  height: 70vh;
+  background-color: #512F39;
 }/*# sourceMappingURL=mobile.css.map */
