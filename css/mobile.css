@@ -117,8 +117,6 @@ html .green-button:hover {
   gap: 2rem;
   place-content: center;
   padding-inline: 2.8rem;
-  max-inline-size: 190rem;
-  margin-inline: auto;
 }
 .projects-bd_main-works-cards {
   background-color: rgba(80, 85, 110, 0.5);
