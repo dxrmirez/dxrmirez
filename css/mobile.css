@@ -127,6 +127,8 @@ html .green-button:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 .projects-bd_main-works-cards-text {
   padding-inline: 1rem;
@@ -146,4 +148,9 @@ html .green-button:hover {
   font-size: 1.2rem;
   font-style: italic;
   opacity: 0.5;
+}
+.projects-bd_main-works-cards:hover img {
+  -o-object-position: bottom;
+     object-position: bottom;
+  transition: 1s;
 }/*# sourceMappingURL=mobile.css.map */

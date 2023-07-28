@@ -168,6 +168,7 @@ html {
             gap: 2rem;
             place-content: center;
             padding-inline: 2.8rem;
+
             &-cards {
                 background-color: rgba(80, 85, 110, 0.5);
                 min-block-size: 30rem;
@@ -176,6 +177,7 @@ html {
                     max-block-size: 14rem;
                     width: 100%;
                     object-fit: cover;
+                    object-position: top;
                 }
 
                 &-text {
@@ -191,12 +193,20 @@ html {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         align-items: end;
-                        p{
+
+                        p {
                             font-size: $xs;
                             font-style: italic;
                             opacity: 0.5;
                         }
                     }
+                }
+            }
+
+            &-cards:hover{
+                img{
+                    object-position: bottom;
+                    transition: 1s;
                 }
             }
         }
