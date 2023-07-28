@@ -13,7 +13,7 @@ $dk-floor-color: #512F39;
 
 
 $code: 'Source Code Pro', monospace;
-$atari: 'Press Start 2P', cursive;
+$atari: 'Libre Barcode 39 Text', cursive;
 $xs: 1.2rem;
 $sm: 1.4rem;
 $md: 1.6rem;
@@ -88,10 +88,12 @@ html {
             p {
                 font-family: $atari;
                 text-align: center;
-                line-height: 2rem;
-                padding-inline-end: 2rem;
                 color: $dk-left-color;
                 background-color: rgba(255, 255, 255, 0.3);
+                font-size: 2.8rem;
+                font-weight: 700;
+                letter-spacing: 0.2rem;
+                line-height: 3.4rem;
             }
             
             p:hover{
@@ -118,5 +120,28 @@ html {
                 margin-inline-end: 0.6rem;
             }
         }
+    }
+}
+
+.projects-bd{
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+
+    &_header{
+        background-color: $dk-left-color;
+        display: grid;
+        grid-template-columns: minmax(18rem, 40rem) minmax(6rem, 40rem);
+        justify-content: center;
+        align-items: center;
+        padding-inline: 2rem;
+        a{
+            justify-self: end;
+            color: white;
+        }
+        a:hover{
+            background-color: white;
+            color: $dk-left-color;
+        }
+        
     }
 }
