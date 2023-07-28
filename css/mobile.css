@@ -52,10 +52,13 @@ html .primary-button:hover {
   font-family: "Press Start 2P", cursive;
   text-align: center;
   line-height: 2rem;
-  margin-block-start: 2rem;
   padding-inline-end: 2rem;
   color: #414564;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.index-bd_header-l p:hover {
+  background-color: #414564;
+  color: white;
 }
 .index-bd_header-r {
   background-color: #50556E;

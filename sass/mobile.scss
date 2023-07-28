@@ -89,10 +89,14 @@ html {
                 font-family: $atari;
                 text-align: center;
                 line-height: 2rem;
-                margin-block-start: 2rem;
                 padding-inline-end: 2rem;
                 color: $dk-left-color;
-                background-color: white;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+            
+            p:hover{
+                background-color: $dk-left-color;
+                color: white;
             }
         }
 
