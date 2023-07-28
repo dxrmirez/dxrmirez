@@ -1,0 +1,51 @@
+// --------INITIAL CONFIG--------------
+
+$black: #222225;
+
+$lg-left-color: #616C81;
+$lg-right-color: #7D949F;
+$lg-floor-color: #7C5C4E;
+
+
+$dk-left-color: #414564;
+$dk-right-color: #50556E;
+$dk-floor-color: #512F39;
+
+
+$code: 'Source Code Pro', monospace;
+$atari: 'Press Start 2P', cursive;
+$xs: 1.2rem;
+$sm: 1.4rem;
+$md: 1.6rem;
+$lg: 1.8rem;
+$xlg: 2rem;
+
+@mixin flex($direction: null, $justify: null, $align: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// --------GENERAL SELECTORS--------------
+
+
+// -----------STYLE PAGES----------------
+
+.index-bd {
+    grid-template-rows: 5fr 2fr;
+
+    &_header {
+        grid-template-columns: 1fr 2fr;
+
+        img {
+            inset-inline-start: 33.33%;
+        }
+
+        &-r{
+            p{
+                font-size: $md;
+            }
+        }
+    }
+}

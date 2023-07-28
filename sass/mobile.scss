@@ -1,3 +1,5 @@
+// --------INITIAL CONFIG--------------
+
 $black: #222225;
 
 $lg-left-color: #616C81;
@@ -25,6 +27,8 @@ $xlg: 2rem;
     align-items: $align;
 }
 
+// --------GENERAL SELECTORS--------------
+
 * {
     margin: 0;
     padding: 0;
@@ -39,81 +43,76 @@ html {
         color: white;
         font-family: $code;
         font-size: $sm;
+        min-block-size: 100vh;
+    }
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
+    .primary-button {
+        text-decoration: none;
+        color: white;
+        box-sizing: content-box;
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        background-color: $dk-right-color;
+        text-align: center;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    .primary-button:hover {
+        border: 2px solid white;
+        text-decoration: underline;
     }
 }
 
-.header {
-    height: 6vh;
-    @include flex();
-    color: white;
-    font-weight: 700;
+// -----------STYLE PAGES----------------
 
-    &_right {
-        @include flex(null, left, top);
-        gap: 3.2rem;
-        width: 50%;
-        padding: 0 2rem;
-        background-color: $lg-right-color;
+.index-bd {
+    display: grid;
+    grid-template-rows: 3fr 4fr;
 
-        &-theme {
-            width: 2.8rem;
-            cursor: pointer;
-
-            img {
-                width: 4rem;
-            }
-        }
-    }
-
-    &_left {
-        @include flex(null, left, center);
-        background-color: $lg-left-color;
-        width: 50%;
-        padding: 0 0 0 2rem;
-    }
-
-}
-
-.main {
-    &_hero {
-        line-height: 0;
-        background: linear-gradient(to right, $lg-left-color 50%, $lg-right-color 50%);
-        @include flex(null, center, center);
+    &_header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        overflow: hidden;
 
         img {
-            width: 300px;
+            block-size: 75%;
+            position: absolute;
+            inset-block-end: 0;
+            inset-inline-start: 50%;
+            transform: translate(-50%);
+        }
+
+        &-l {
+            background-color: $dk-left-color;
+
+            p {
+                font-family: $atari;
+                text-align: center;
+                line-height: 2rem;
+                margin-block-start: 2rem;
+                padding-inline-end: 2rem;
+                color: $dk-left-color;
+                background-color: white;
+            }
+        }
+
+        &-r {
+            background-color: $dk-right-color;
         }
     }
-}
 
-main div {
-    height: 70vh;
-    background-color: $lg-floor-color;
-}
-
-.dark-mode {
-    &-left {
-        background-color: $dk-left-color;
-    }
-
-    &-right {
-        background-color: $dk-right-color;
-    }
-
-    &-hero {
-        background: linear-gradient(to right, $dk-left-color 50%, $dk-right-color 50%);
-    }
-
-    &-floor {
+    &_main {
         background-color: $dk-floor-color;
+        display: grid;
+        place-content: center;
+        padding-inline: 6rem;
+        gap: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 24rem));
+
+        a {
+            svg {
+                margin-inline-end: 0.6rem;
+            }
+        }
     }
 }

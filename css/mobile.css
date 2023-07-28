@@ -12,71 +12,62 @@ html body {
   color: white;
   font-family: "Source Code Pro", monospace;
   font-size: 1.4rem;
+  min-block-size: 100vh;
 }
-html body a {
+html .primary-button {
   text-decoration: none;
   color: white;
+  box-sizing: content-box;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background-color: #50556E;
+  text-align: center;
 }
-html body a:hover {
+html .primary-button:hover {
+  border: 2px solid white;
   text-decoration: underline;
 }
 
-.header {
-  height: 6vh;
-  display: flex;
-  color: white;
-  font-weight: 700;
+.index-bd {
+  display: grid;
+  grid-template-rows: 3fr 4fr;
 }
-.header_right {
-  display: flex;
-  justify-content: left;
-  align-items: top;
-  gap: 3.2rem;
-  width: 50%;
-  padding: 0 2rem;
-  background-color: #7D949F;
+.index-bd_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
 }
-.header_right-theme {
-  width: 2.8rem;
-  cursor: pointer;
+.index-bd_header img {
+  block-size: 75%;
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 50%;
+  transform: translate(-50%);
 }
-.header_right-theme img {
-  width: 4rem;
-}
-.header_left {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  background-color: #616C81;
-  width: 50%;
-  padding: 0 0 0 2rem;
-}
-
-.main_hero {
-  line-height: 0;
-  background: linear-gradient(to right, #616C81 50%, #7D949F 50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main_hero img {
-  width: 300px;
-}
-
-main div {
-  height: 70vh;
-  background-color: #7C5C4E;
-}
-
-.dark-mode-left {
+.index-bd_header-l {
   background-color: #414564;
 }
-.dark-mode-right {
+.index-bd_header-l p {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  line-height: 2rem;
+  margin-block-start: 2rem;
+  padding-inline-end: 2rem;
+  color: #414564;
+  background-color: white;
+}
+.index-bd_header-r {
   background-color: #50556E;
 }
-.dark-mode-hero {
-  background: linear-gradient(to right, #414564 50%, #50556E 50%);
-}
-.dark-mode-floor {
+.index-bd_main {
   background-color: #512F39;
+  display: grid;
+  place-content: center;
+  padding-inline: 6rem;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 24rem));
+}
+.index-bd_main a svg {
+  margin-inline-end: 0.6rem;
 }/*# sourceMappingURL=mobile.css.map */

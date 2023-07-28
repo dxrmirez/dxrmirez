@@ -1,10 +1,11 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home — David Ramirez</title>
+    <link rel="shortcut icon" href="./assets/shorticon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,27 +13,34 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1025px)">
 </head>
 
-<body>
-    <header class="header">
-        <div class="header_left"  data-left>
-            <p>/dxrmirez</p>
+<body class="index-bd">
+    <header class="index-bd_header">
+        <img src="./assets/hero-gif/night.gif" alt="night">
+        <div class="index-bd_header-l">
+            <a style="text-decoration: none;" href="https://github.com/dxrmirez" target="_blank">
+                <p>/dxrmirez</p>
+            </a>
         </div>
-        <div class="header_right" data-right>
-            <figure class="header_right-theme" data-lamp-icon ><img src="./assets/hero-gif/lamp-off.png" alt="" class="img-lamp"></figure>
-        </div>
+        <div class="index-bd_header-r"></div>
     </header>
-
-    <main class="main" >
-        <section class="main_hero" data-hero>
-            <img src="./assets/hero-gif/day.gif" id="gif-theme" alt="night">
-        </section>
-        <div class="main_floor" data-floor></div>
+    <main class="index-bd_main">
+        <a href="./pages/projects.html" class="primary-button"><svg class="w-6 md:w-12 h-6 md:h-12" width="14"
+                height="14" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21 18H7V2H15V4H17V6H15V8H17V6H19V8H21V18ZM9 4V16H19V10H13V4H9ZM3 6H5V20H17V22H5H3V20V6Z"
+                    fill="currentColor"></path>
+            </svg>Mis proyectos</a>
+        <a href="./pages/about.html" class="primary-button"><svg class="w-6 md:w-12 h-6 md:h-12" width="14" height="14"
+                viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 2H10V6H6V2ZM3 7H13V16H11V22H9V16H7V22H5V16H3V7ZM21 3H15V5H21V3ZM17 7H21V9H17V7ZM21 11H15V13H21V11ZM15 19H21V21H15V19ZM21 15H17V17H21V15Z"
+                    fill="currentColor"></path>
+            </svg>Acerca de mí</a>
     </main>
 
-    <script src="./script.js" type="module"></script>
 </body>
 
 </html>
