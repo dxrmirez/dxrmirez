@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  background-color: #222225;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.4rem;
+  min-block-size: 100vh;
+}
+html .primary-button {
+  text-decoration: none;
+  color: white;
+  box-sizing: content-box;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background-color: #50556E;
+  text-align: center;
+}
+html .primary-button:hover {
+  border: 2px solid white;
+  text-decoration: underline;
+}
+html .green-button {
+  color: white;
+  background-color: green;
+  box-sizing: content-box;
+  padding-inline: 1.6rem;
+  justify-self: end;
+}
+html .green-button:hover {
+  background-color: rgb(38, 115, 38);
+  transition: 0.4s;
+}
+
+.index-bd {
+  display: grid;
+  grid-template-rows: 3fr 4fr;
+}
+.index-bd_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+.index-bd_header img {
+  block-size: 75%;
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 50%;
+  transform: translate(-50%);
+}
+.index-bd_header-l {
+  background-color: #414564;
+}
+.index-bd_header-l p {
+  font-family: "Libre Barcode 39 Text", cursive;
+  text-align: center;
+  color: #414564;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 3.4rem;
+}
+.index-bd_header-l p:hover {
+  background-color: #414564;
+  color: white;
+}
+.index-bd_header-r {
+  background-color: #50556E;
+}
+.index-bd_main {
+  background-color: #512F39;
+  display: grid;
+  place-content: center;
+  padding-inline: 6rem;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 24rem));
+}
+.index-bd_main a svg {
+  margin-inline-end: 0.6rem;
+}
+
+.projects-bd {
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+}
+.projects-bd_header {
+  background-color: #414564;
+  display: grid;
+  grid-template-columns: minmax(18rem, 40rem) minmax(6rem, 40rem);
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2.8rem;
+}
+.projects-bd_header a {
+  justify-self: end;
+  color: white;
+}
+.projects-bd_header a:hover {
+  background-color: white;
+  color: #414564;
+}
+.projects-bd_main {
+  margin-block: 6rem;
+}
+.projects-bd_main-works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+  gap: 2rem;
+  place-content: center;
+  padding-inline: 2.8rem;
+}
+.projects-bd_main-works-cards {
+  background-color: rgba(80, 85, 110, 0.5);
+  min-block-size: 30rem;
+}
+.projects-bd_main-works-cards img {
+  max-block-size: 14rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.projects-bd_main-works-cards-text {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  display: grid;
+  align-items: center;
+  min-block-size: 16rem;
+  align-content: space-between;
+  gap: 2rem;
+}
+.projects-bd_main-works-cards-text div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+}
+.projects-bd_main-works-cards-text div p {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.5;
+}
+.projects-bd_main-works-cards:hover img {
+  -o-object-position: bottom;
+     object-position: bottom;
+  transition: 1s;
+}/*# sourceMappingURL=mobile.css.map */

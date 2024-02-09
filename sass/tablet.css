@@ -1,0 +1,12 @@
+.index-bd {
+  grid-template-rows: 5fr 2fr;
+}
+.index-bd_header {
+  grid-template-columns: 1fr 2fr;
+}
+.index-bd_header img {
+  inset-inline-start: 33.33%;
+}
+.index-bd_header-r p {
+  font-size: 1.6rem;
+}/*# sourceMappingURL=tablet.css.map */
